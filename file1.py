@@ -34,7 +34,7 @@ def list():
         app.logger.info("Defined a list")
         list = [1, 2, 3]
         app.logger.info("Accessing a element in list")
-        value = list[2]
+        value = list[1]  # Fixed the index to access the correct element
         return jsonify(message=value)
     except Exception as e:
         app.logger.error(f"Error in list: {str(e)}")
